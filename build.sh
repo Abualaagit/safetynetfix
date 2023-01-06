@@ -21,7 +21,7 @@ pushd java
 popd
 
 mkdir -p magisk/zygisk
-for arch in arm64-v8a armeabi-v7a x86 x86_64
+for arch in arm64-v8a
 do
     cp "zygisk/module/libs/$arch/libsafetynetfix.so" "magisk/zygisk/$arch.so"
 done
